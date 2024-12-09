@@ -32,20 +32,21 @@ Date retrieved: [December 9, 2024] */
             display: flex;
             justify-content: flex-end;
         }
-
         li {
             margin: 0;
         }
 
-        li a {
+        ul li a {
             display: block;
             color: black;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            font-family: "Aleo", serif;
+            font-size: 18px;
         }
 
-        li a:hover {
+        ul li a:hover {
             background-color: #D4B682;
         }
       
@@ -268,8 +269,6 @@ Date retrieved: [December 9, 2024] */
         right: 60px;
         transform: translateX(0);
     }
-
-      
       
     .p1, .p2, .p3{
         font-family: "Aleo", serif;
@@ -290,7 +289,27 @@ Date retrieved: [December 9, 2024] */
     .p3 {
         left: 1210px;
     }
-      
+
+    .map-link {
+        color: black;
+        font-family: "Aleo", serif;
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        top: 2370px;
+        left: 60px;
+    }
+
+
+    .map-link:hover {
+        color: #D4B682;
+        background-color: transparent;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
       footer {
           background-color: #ECDEC5;
           padding: 20px 5px;
@@ -417,7 +436,6 @@ Date retrieved: [December 9, 2024] */
         <div class="overlay"></div>
     </div>
 
-  
     <p class="p1">
       Ancient American <br>
       Medieval <br>
@@ -425,7 +443,6 @@ Date retrieved: [December 9, 2024] */
       European <br>
       Roman
   </p>
-  
   
     <p class="p2">
       Egyptian <br>
@@ -435,7 +452,6 @@ Date retrieved: [December 9, 2024] */
       Asian
   </p>
   
-  
     <p class="p3">
       African <br>
       Costume Design <br>
@@ -444,7 +460,10 @@ Date retrieved: [December 9, 2024] */
       Drawings &amp Prints
   </p>
   
-  
+<a href="https://maps.metmuseum.org/?floor=1&lang=en-GB#16.89/40.779506/-73.963468/-61" 
+   target="_blank" class="map-link">
+    View Our Map
+</a>
   
   <footer>
     Sign up for our Newsletter
