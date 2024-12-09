@@ -150,16 +150,70 @@
         top: 1951px;
         left: 1385px;
     }
+      
+      
+/*Code copied from: [https://www.w3schools.com/howto/howto_css_image_overlay.asp]
+Author: [w3Schools]
+Name: [How TO - Image Hover Overlay]
+Description: [Used to make hover effect when mouse is ontop of images]
+Date retrieved: [December 9, 2024] */
+      
+    .painting-container {
+        position: absolute;
+    }
+
+    .painting-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .painting-container .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .painting-container:hover .overlay {
+        opacity: 1;
+    }
     
+      
     .heading2 {
-        top: 2750px;
+        top: 2200px;
       }
       
-    
-      
+    .wing-name1, .wing-name2, .wing-name3 {
+        font-family: "Aleo", serif;
+        font-weight: bold;
+        position: absolute;
+        top: 2400px;
+        font-size: 24px;
+        color: black;
+    }
 
-      
-      
+
+    .wing-name1 {
+        left: 128;
+        text-align: left;
+    }
+
+
+    .wing-name2 {
+        left: 50%;
+        text-align: center;
+    }
+
+
+    .wing-name3 {
+        right: 128;
+        text-align: right;
+    }
+
       
       footer {
           background-color: #ECDEC5;
@@ -225,35 +279,53 @@
     </div>
 </div>
   
+  
   <h2 class="heading1">Exhibitions</h2>
 
-    <img class="painting1" src="AdobeStock_326068534.jpeg" alt="painting">
- 
-    <img class="painting2" src="AdobeStock_422037208_Editorial_Use_Only.jpeg" alt="painting">
-  
-    <img class="painting3" src="AdobeStock_726660976.jpeg" alt="painting">  
+    <div class="painting-container painting1">
+        <img src="AdobeStock_326068534.jpeg" alt="painting">
+        <div class="overlay"></div>
+    </div>
 
-    <img class="painting4" src="AdobeStock_398717330.jpeg" alt="painting"> 
+    <div class="painting-container painting2">
+        <img src="AdobeStock_422037208_Editorial_Use_Only.jpeg" alt="painting">
+        <div class="overlay"></div>
+    </div>
 
-    <img class="painting5" src="AdobeStock_220686156.jpeg" alt="painting"> 
+    <div class="painting-container painting3">
+        <img src="AdobeStock_726660976.jpeg" alt="painting">
+        <div class="overlay"></div>
+    </div>
 
-    <img class="painting6" src="AdobeStock_430440674_Editorial_Use_Only.jpeg" alt="painting">  
+    <div class="painting-container painting4">
+        <img src="AdobeStock_398717330.jpeg" alt="painting">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="painting-container painting5">
+        <img src="AdobeStock_220686156.jpeg" alt="painting">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="painting-container painting6">
+        <img src="AdobeStock_430440674_Editorial_Use_Only.jpeg" alt="painting">
+        <div class="overlay"></div>
+    </div>
   
 
     <div class="exhibition-name1">Ancient American</div>
-  
     <div class="exhibition-name2">Egyptian</div>
- 
     <div class="exhibition-name3">European</div>
-  
     <div class="exhibition-name4">Midieval</div>
-  
     <div class="exhibition-name5">Modern</div> 
-  
     <div class="exhibition-name6">Roman</div>
   
   <h2 class="heading2">Wings</h2>
  
+    <div class="wing-name1">North Wing</div>
+    <div class="wing-name2">East Wing</div>
+    <div class="wing-name3">South Wing</div>
+  
   
   
   <footer>
