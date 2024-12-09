@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Aleo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Aleo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
   
     <title>Gallery</title>
     <style>
+      
+      
+  /*Code copied from: [https://www.w3schools.com/cssref/func_translatex.php]
+Author: [w3Schools]
+Name: [CSS translateX() Function]
+Description: [Used multiple times throughout code to align text properly. Used for wing names and images.]
+Date retrieved: [December 9, 2024] */
+      
+      
         body {
             background-color: #FFFAF2;
             margin: 0;
@@ -198,7 +206,7 @@ Date retrieved: [December 9, 2024] */
 
 
     .wing-name1 {
-        left: 128px;
+        left: 200px;
         text-align: left;
     }
 
@@ -211,10 +219,52 @@ Date retrieved: [December 9, 2024] */
 
 
     .wing-name3 {
-        right: 128px;
+        right: 210px;
         text-align: right;
     }
 
+    .wing-image1, .wing-image2, .wing-image3 {
+        position: absolute;
+        width: 450px;
+        height: 350px;
+        top: 2500px;
+    }
+
+    .wing-image1 {
+        left: 60px;
+    }
+
+    .wing-image2 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .wing-image3 {
+        right: 60px;
+        transform: translateX(0);
+    }
+      
+      
+      
+    .p1, .p2, .p3{
+        font-family: "Aleo", serif;
+        position: absolute;
+        top: 2850px;
+        left: 130px;
+        font-size: 24px;
+        color: black;
+        text-align: center;
+        width: 300px;
+    }
+      
+    .p2 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+      
+    .p3 {
+        left: 1210px;
+    }
       
       footer {
           background-color: #ECDEC5;
@@ -317,7 +367,7 @@ Date retrieved: [December 9, 2024] */
     <div class="exhibition-name1">Ancient American</div>
     <div class="exhibition-name2">Egyptian</div>
     <div class="exhibition-name3">European</div>
-    <div class="exhibition-name4">Midieval</div>
+    <div class="exhibition-name4">Medieval</div>
     <div class="exhibition-name5">Modern</div> 
     <div class="exhibition-name6">Roman</div>
   
@@ -326,6 +376,38 @@ Date retrieved: [December 9, 2024] */
     <div class="wing-name1">North Wing</div>
     <div class="wing-name2">East Wing</div>
     <div class="wing-name3">South Wing</div>
+  
+    <img class="wing-image1" src="AdobeStock_634154518.jpeg" alt="gallery">
+  
+    <img class="wing-image2" src="AdobeStock_634931170.jpeg" alt="gallery">
+  
+    <img class="wing-image3" src="AdobeStock_316407342_Editorial_Use_Only.jpeg" alt="gallery">
+  
+    <p class="p1">
+      Ancient American <br>
+      Medieval <br>
+      Modern <br>
+      European <br>
+      Roman
+  </p>
+  
+  
+    <p class="p2">
+      Egyptian <br>
+      Greek <br>
+      Islamic <br>
+      Oceanic <br>
+      Asian
+  </p>
+  
+  
+    <p class="p3">
+      African <br>
+      Costume Design <br>
+      Photographs <br>
+      Sculptures <br>
+      Drawings &amp Prints
+  </p>
   
   
   
