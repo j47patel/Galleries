@@ -67,7 +67,6 @@ Date retrieved: [December 9, 2024] */
           object-fit: cover;
         }
 
-
       .title {
           font-family: "Albert Sans", sans-serif;
           position: absolute;
@@ -76,7 +75,6 @@ Date retrieved: [December 9, 2024] */
           font-size: 170px;
           color: white;
         }
-
 
       .heading1, .heading2 {
           font-family: "Albert Sans", sans-serif;
@@ -92,15 +90,23 @@ Date retrieved: [December 9, 2024] */
           padding: 20px 0;
           padding-left: 70px;
       }
-      
-      
-      .view-all {
-          position: absolute;
-          font-size: 24px;
-          top: 860px;
-          left: 1465px;
-          font-family: "Aleo", serif;
+        
+      .view-all a {
+        position: absolute;
+        top: 860px;
+        left: 1465px;
+        color: black;
+        text-decoration: none;
+        font-size: 24px;
+        font-family: "Aleo", serif;
       }
+
+    .view-all a:hover {
+        color: white;
+        background-color: transparent;
+        text-decoration: underline;
+        cursor: pointer;
+    }
       
       .arrow {
         position: absolute;
@@ -394,7 +400,9 @@ Date retrieved: [December 9, 2024] */
   
   <h2 class="heading1">Exhibitions</h2>
   
-  <div class="view-all">View All</div>
+<div class="view-all">
+    <a href="#gallery">View All</a>
+</div>
   
   <img class="arrow" src="arrow2.png" alt="arrow">
 
